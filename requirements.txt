@@ -1,0 +1,12 @@
+transformers
+datasets
+accelerate
+torch
+huggingface_hub
+peft
+trl
+evaluate
+rouge_score
+scikit-learn
+pandas
+matplotlib
