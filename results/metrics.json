@@ -1,0 +1,15 @@
+{
+  "base_model": {
+    "rouge1": 0.2753271663189518,
+    "rouge2": 0.11275900145793522,
+    "rougeL": 0.18432227150576438,
+    "rougeLsum": 0.1847284312957487
+  },
+  "finetuned_model": {
+    "rouge1": 0.3018549364510794,
+    "rouge2": 0.1356020713453551,
+    "rougeL": 0.2122418692605991,
+    "rougeLsum": 0.21470109944852175
+  },
+  "notes": "ROUGE was used to compare generated answers with reference responses on 20 test examples."
+}
