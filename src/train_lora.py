@@ -57,12 +57,13 @@ def preprocess_function(examples):
     )
 
     result = tokenizer(text, padding="max_length", truncation=True, max_length=512)
+    result["labels"] = result["input_ids"].copy()  # создаем метки для обучения
     return result
 
 print("Токенизация данных...")
 
 tokenized_datasets = dataset.map(
-    tokenize,
+    preprocess_function,
     remove_columns=dataset["train"].column_names,
 )
 
